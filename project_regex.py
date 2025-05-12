@@ -20,7 +20,7 @@ for i in filenamelist:
     list_of_line=[]
     lineNum = 1
     while True:
-        line = myFile.readline()
+        line = myFile.readline(5_000_000)
         # line is empty so exit
         if not line:
             break
